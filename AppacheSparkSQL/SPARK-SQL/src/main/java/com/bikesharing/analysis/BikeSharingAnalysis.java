@@ -15,7 +15,7 @@ public class BikeSharingAnalysis {
     public static void main(String[] args) {
 
         // ---------------------------------------------------------
-        // 1. 2. Create Spark Session
+        // 1. 1. Create Spark Session
         // ---------------------------------------------------------
         SparkSession spark = SparkSession.builder()
                 .appName("Bike Sharing Analysis")
@@ -24,7 +24,7 @@ public class BikeSharingAnalysis {
 
 
         // ---------------------------------------------------------
-        // 1. 2. Load CSV dataset into a Spark DataFrame
+        // 1. 1. Load CSV dataset into a Spark DataFrame
         // ---------------------------------------------------------
         Dataset<Row> df = spark.read()
                 .option("header", "true")       // First row contains column names
@@ -33,28 +33,28 @@ public class BikeSharingAnalysis {
 
 
         // ---------------------------------------------------------
-        // 3. Display Schema
+        // 1. 2. Display Schema
         // ---------------------------------------------------------
         System.out.println("Dataset Schema:");
         df.printSchema();
 
 
         // ---------------------------------------------------------
-        // 4. Show first 5 rows
+        // 1. 3. Show first 5 rows
         // ---------------------------------------------------------
         System.out.println("First 5 Rows:");
         df.show(5);
 
 
         // ---------------------------------------------------------
-        // 5. Count total number of rentals
+        // 1. 4. Count total number of rentals
         // ---------------------------------------------------------
         long totalRentals = df.count();
         System.out.println("Total Rentals in Dataset: " + totalRentals);
 
 
         // ---------------------------------------------------------
-        // 6. Create Temporary SQL View
+        // 2. Create Temporary SQL View
         // ---------------------------------------------------------
         df.createOrReplaceTempView("bike_rentals_view");
 
