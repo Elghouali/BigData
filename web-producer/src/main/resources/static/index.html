@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Tracker</title>
+</head>
+<body>
+<h1>Kafka Streams Click Analytics</h1>
+<button id="clickBtn" style="padding: 20px; font-size: 20px;">Cliquez ici</button>
+
+<script>
+    // This JavaScript listens for a mouse click on the button
+    document.getElementById("clickBtn").addEventListener("click", function() {
+
+        // When clicked, it secretly sends an HTTP POST request to our Spring Boot server
+        fetch('/api/click', { method: 'POST' })
+            .then(response => console.log('Successfully sent to Spring Boot!'));
+
+    });
+</script>
+</body>
+</html>
