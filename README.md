@@ -21,6 +21,18 @@
 | **Spark RDD** | [RDD manipulation exercises](Manipulation%20des%20RDD%20de%20nombres%20avec%20Apache%20Spark%20Objectif/) |
 | **Producer example** | [Web producer source](web-producer/) |
 
+## New hands-on portfolio projects
+
+Start with the [guided Big Data & Cloud labs](projects/):
+
+| Guided project | Stack and objective |
+| --- | --- |
+| [Retail PySpark Lakehouse](projects/retail-pyspark-lakehouse/) | PySpark · Parquet · data quality · Bronze/Silver/Gold analytics |
+| [Cloud Object Storage API](projects/cloud-object-store-api/) | Python · FastAPI · S3 SDK · local object storage · optional Terraform AWS S3 |
+| [Advanced project ideas](projects/FUTURE_IDEAS.md) | Streaming analytics, cloud-native pipelines, disaster recovery |
+
+Each lab includes a working-reference design, tests, exercises, and a checklist for rebuilding it yourself. The local-first design avoids mandatory cloud charges.
+
 ## What this repository demonstrates
 
 - Understanding of **distributed file systems** and HDFS.
