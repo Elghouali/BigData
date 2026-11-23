@@ -44,6 +44,12 @@ flowchart TD
 
 Every lab has **concepts → commands → observation → challenge → verification**. The included code is a reference implementation. **Rebuild it yourself in a separate branch** to truly learn.
 
+## More than tutorials: deep mechanisms and workplace tickets
+
+For difficult technologies, use the [Spark/Kafka/lakehouse deep dives](big-data/README.md#deep-concept-guides) and [networking/IAM/reliability deep dives](cloud-computing/README.md#deep-concept-guides). Each includes what happens internally, a realistic incident, trade-offs, failure injection and an interview exercise.
+
+Use the [engineering ticket backlog](WORK_TICKETS.md) for tasks resembling real Data Engineer and Cloud Engineer assignments, and the [four end-to-end projects](capstones/README.md) to combine those skills into deliverables.
+
 ## 4-stage mastery rubric
 
 1. **Explain** a system using no buzzwords: inputs, outputs, states, contracts, assumptions.
