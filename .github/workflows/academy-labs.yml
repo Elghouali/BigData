@@ -1,0 +1,45 @@
+name: Big Data and Cloud Academy - reproducible labs
+
+on:
+  push:
+    paths:
+      - "academy/**"
+      - ".github/workflows/academy-labs.yml"
+  pull_request:
+    paths:
+      - "academy/**"
+      - ".github/workflows/academy-labs.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  academy-standard-library-labs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate academy navigation and catalog
+        run: python -m unittest discover -s academy/tests -v
+      - name: Check academy CLI
+        run: python academy/academy.py list
+      - name: Validate SQL ETL
+        run: cd academy/labs/sql-etl && python -m unittest discover -s tests -v
+      - name: Validate networking retries
+        run: cd academy/labs/networking && python -m unittest discover -s tests -v
+      - name: Validate event-time simulation
+        run: cd academy/labs/stream-processing && python -m unittest discover -s tests -v
+      - name: Validate data quality and freshness monitoring
+        run: cd academy/labs/data-observability && python -m unittest discover -s tests -v
+      - name: Validate Kafka idempotent inbox (no broker required)
+        run: cd academy/labs/kafka-inbox && python -m unittest discover -s tests -v
+      - name: Validate end-to-end retail product
+        run: cd academy/capstones/retail-analytics-data-product && python -m unittest discover -s tests -v
+      - name: Validate cloud artifact publishing
+        run: cd academy/capstones/cloud-data-publishing && python -m unittest discover -s tests -v
+      - name: Run all registered Python lab suites through learner CLI
+        run: python academy/academy.py test all
+      - name: Smoke test retail data product
+        run: cd academy/capstones/retail-analytics-data-product && python run.py --output output

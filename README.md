@@ -21,6 +21,16 @@
 | **Spark RDD** | [RDD manipulation exercises](Manipulation%20des%20RDD%20de%20nombres%20avec%20Apache%20Spark%20Objectif/) |
 | **Producer example** | [Web producer source](web-producer/) |
 
+## New: Big Data + Cloud Engineering Academy
+
+**Start here:** [Big Data & Cloud Academy](academy/README.md) — a fundamentals-to-professional, open-source learning environment that teaches why systems work, how they fail, and how to fix them.
+
+- [20-week curriculum](academy/ROADMAP_20_WEEKS.md) · [24 role-focused modules](academy/README.md) · [Engineering ticket backlog](academy/WORK_TICKETS.md)
+- [Big Data track](academy/big-data/README.md) · [Cloud Computing track](academy/cloud-computing/README.md)
+- [Hands-on labs and four end-to-end capstones](academy/capstones/README.md)
+
+The original course exercises remain below. The academy uses them as optional applied learning challenges.
+
 ## New hands-on portfolio projects
 
 Start with the [guided Big Data & Cloud labs](projects/):

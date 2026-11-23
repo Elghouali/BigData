@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "tracks": [
+    "big-data",
+    "cloud-computing",
+    "integrated"
+  ],
+  "labs": [
+    {
+      "id": "sql-etl",
+      "name": "Retail order validation and SQLite",
+      "track": "big-data",
+      "level": "foundation",
+      "path": "labs/sql-etl",
+      "reference": "labs/sql-etl/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "networking",
+      "name": "HTTP incident and safe retries",
+      "track": "cloud-computing",
+      "level": "foundation",
+      "path": "labs/networking",
+      "reference": "labs/networking/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "stream-processing",
+      "name": "Event-time and late transactions",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "labs/stream-processing",
+      "reference": "labs/stream-processing/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "terraform-local",
+      "name": "Terraform drift and local state",
+      "track": "cloud-computing",
+      "level": "intermediate",
+      "path": "labs/terraform-local",
+      "reference": "labs/terraform-local/README.md",
+      "kind": "manual"
+    },
+    {
+      "id": "retail-capstone",
+      "name": "End-to-end retail analytics data product",
+      "track": "integrated",
+      "level": "intermediate",
+      "path": "capstones/retail-analytics-data-product",
+      "reference": "capstones/retail-analytics-data-product/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "cloud-publishing",
+      "name": "Artifact upload and checksum verification",
+      "track": "integrated",
+      "level": "intermediate",
+      "path": "capstones/cloud-data-publishing",
+      "reference": "capstones/cloud-data-publishing/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "pyspark-lakehouse",
+      "name": "PySpark Bronze Silver Gold",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "../projects/retail-pyspark-lakehouse",
+      "reference": "../projects/retail-pyspark-lakehouse/README.md",
+      "kind": "manual"
+    },
+    {
+      "id": "cloud-object-api",
+      "name": "S3-compatible REST API with MinIO",
+      "track": "cloud-computing",
+      "level": "intermediate",
+      "path": "../projects/cloud-object-store-api",
+      "reference": "../projects/cloud-object-store-api/README.md",
+      "kind": "manual"
+    },
+    {
+      "id": "data-observability",
+      "name": "On-call data freshness and quality alerts",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "labs/data-observability",
+      "reference": "labs/data-observability/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "kafka-inbox",
+      "name": "Kafka delivery and replay-safe SQLite inbox",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "labs/kafka-inbox",
+      "reference": "labs/kafka-inbox/README.md",
+      "kind": "python-unittest"
+    }
+  ]
+}
