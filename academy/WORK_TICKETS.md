@@ -25,3 +25,10 @@ Treat these as tasks assigned by a lead engineer. Deliver a pull request with te
 7. Submit a PR and explain the design as if defending it in a code review.
 
 You can create GitHub Issues from these tickets later; no ticket is marked complete unless the evidence exists.
+
+## Additional operational tickets
+
+| Priority | Ticket | Role | Reference | Acceptance |
+| --- | --- | --- | --- | --- |
+| P1 | OPS-205 Finance dashboard is stale despite green ETL | On-call Data Engineer | [Freshness monitor](labs/data-observability/) | Data and job freshness evaluated separately; alerts reproducible |
+| P1 | EVT-301 Kafka replay sends duplicate notifications | Streaming Engineer | [Kafka transactional inbox](labs/kafka-inbox/) | SQLite transaction + stable event ID prevents duplicate side effects under restart |

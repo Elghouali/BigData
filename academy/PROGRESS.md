@@ -17,6 +17,8 @@ Copy this file to a personal notebook or edit it in your **own learning branch**
 - [ ] Hive/warehouse star schema designed
 - [ ] CDC/lakehouse capstone demonstrated with real results
 - [ ] Orchestration retries, backfill and idempotence tested
+- [ ] Source data freshness and job freshness alerts demonstrated
+- [ ] Kafka consumer inbox crash/restart replay experiment completed
 
 ## Cloud
 - [ ] VM vs container vs serverless trade-offs explained

@@ -51,6 +51,8 @@ flowchart TD
 | [SQL ETL from scratch](labs/sql-etl/) | Python only (stdlib) | laptop, no Docker |
 | [HTTP + networking + retries](labs/networking/) | Python only; Docker optional | laptop or Compose |
 | [Stream processing fundamentals](labs/stream-processing/) | Python only (stdlib) | laptop, no Kafka |
+| [Data freshness and SLO monitoring](labs/data-observability/) | Python + SQLite | local incident / alerts |
+| [Kafka replay-safe consumer](labs/kafka-inbox/) | Python + optional Apache Kafka Docker | local broker / recovery |
 | [Retail PySpark lakehouse](../projects/retail-pyspark-lakehouse/) | Docker or Python 3.11 + Java 17 | local Spark |
 | [Cloud S3 object-storage API](../projects/cloud-object-store-api/) | Docker/Compose | local MinIO |
 | [Terraform state lab](labs/terraform-local/) | Terraform CLI (optional) | local only |

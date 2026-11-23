@@ -12,12 +12,12 @@
 | [04](modules/04-hdfs-hadoop.md) | blocks, NameNode/DataNode, fault tolerance | [HDFS coursework](../../HDFS/) |
 | [05](modules/05-spark-engine.md) | DAG, lazy evaluation, stages, jobs, shuffle | [Spark coursework](../../AppacheSparkSQL/) |
 | [06](modules/06-data-lakehouse.md) | Parquet, partition pruning, Bronze/Silver/Gold, Iceberg | [PySpark project](../../projects/retail-pyspark-lakehouse/) |
-| [07](modules/07-kafka.md) | topics, partitions, offsets, replays, delivery | [Kafka coursework](../../Apache%20Kafka/) |
+| [07](modules/07-kafka.md) | topics, partitions, offsets, replays, delivery | [Kafka replay/inbox lab](../labs/kafka-inbox/) and [Kafka coursework](../../Apache%20Kafka/) |
 | [08](modules/08-stream-processing.md) | event time, watermarks, windows, idempotency | [Streaming simulation](../labs/stream-processing/) |
 | [09](modules/09-warehouse-modeling.md) | Hive, star schemas, facts, dimensions, SCD | [Hive coursework](../../Data%20Warehouse%20Distribu%C3%A9%20avec%20Apache%20Hive/) |
 | [10](modules/10-orchestration.md) | DAGs, retries, backfills, dependency scheduling | [Airflow docs](https://airflow.apache.org/docs/) |
 | [11](modules/11-cdc-reliability.md) | WAL, CDC, schema evolution, data quality, reprocessing | [CDC lakehouse](https://github.com/Elghouali/cdc-pipeline-bigdata) |
-| [12](modules/12-production-platforms.md) | security, governance, observability, cost and SLO | capstone review |
+| [12](modules/12-production-platforms.md) | security, governance, observability, cost and SLO | [freshness incident lab](../labs/data-observability/) |
 
 ## Deep concept guides
 

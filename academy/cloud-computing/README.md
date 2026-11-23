@@ -15,7 +15,7 @@
 | [07](modules/07-infrastructure-as-code.md) | IaC plan/state/drift, desired state | [Terraform local lab](../labs/terraform-local/) |
 | [08](modules/08-kubernetes.md) | pods, deployments, services, desired state, probes | manifest and failure exercise |
 | [09](modules/09-reliability.md) | HA, DR, RTO/RPO, scaling, failure domains | restore drill design |
-| [10](modules/10-observability.md) | logs, metrics, traces, SLI/SLO | latency/health measurement |
+| [10](modules/10-observability.md) | logs, metrics, traces, SLI/SLO | [freshness incident lab](../labs/data-observability/) |
 | [11](modules/11-cloud-data-platforms.md) | object storage, streaming, compute, orchestrator, warehouse | integrated Big Data capstone |
 | [12](modules/12-multicloud-cost.md) | AWS/GCP/Azure equivalences, billing, vendor lock-in | architecture decision record |
 

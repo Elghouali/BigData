@@ -31,6 +31,10 @@ jobs:
         run: cd academy/labs/networking && python -m unittest discover -s tests -v
       - name: Validate event-time simulation
         run: cd academy/labs/stream-processing && python -m unittest discover -s tests -v
+      - name: Validate data quality and freshness monitoring
+        run: cd academy/labs/data-observability && python -m unittest discover -s tests -v
+      - name: Validate Kafka idempotent inbox (no broker required)
+        run: cd academy/labs/kafka-inbox && python -m unittest discover -s tests -v
       - name: Validate end-to-end retail product
         run: cd academy/capstones/retail-analytics-data-product && python -m unittest discover -s tests -v
       - name: Validate cloud artifact publishing

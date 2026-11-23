@@ -99,7 +99,8 @@ def main(argv=None):
             chosen = [x for x in catalog if x["id"] == args.lab]
             if not chosen:
                 parser.error("Unknown lab: " + args.lab)
-        return int(any(run_lab(x) != 0 for x in chosen))
+        results = [run_lab(x) for x in chosen]
+        return int(any(code != 0 for code in results))
     if args.cmd == "mark":
         try:
             result = mark(args.state, args.lab, args.status, args.note)

@@ -77,6 +77,24 @@
       "path": "../projects/cloud-object-store-api",
       "reference": "../projects/cloud-object-store-api/README.md",
       "kind": "manual"
+    },
+    {
+      "id": "data-observability",
+      "name": "On-call data freshness and quality alerts",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "labs/data-observability",
+      "reference": "labs/data-observability/README.md",
+      "kind": "python-unittest"
+    },
+    {
+      "id": "kafka-inbox",
+      "name": "Kafka delivery and replay-safe SQLite inbox",
+      "track": "big-data",
+      "level": "intermediate",
+      "path": "labs/kafka-inbox",
+      "reference": "labs/kafka-inbox/README.md",
+      "kind": "python-unittest"
     }
   ]
 }
