@@ -1,0 +1,5 @@
+.academy-progress.json
+.academy-progress.json.tmp
+__pycache__/
+.pytest_cache/
+*.pyc
