@@ -19,6 +19,12 @@
 | [11](modules/11-cloud-data-platforms.md) | object storage, streaming, compute, orchestrator, warehouse | integrated Big Data capstone |
 | [12](modules/12-multicloud-cost.md) | AWS/GCP/Azure equivalences, billing, vendor lock-in | architecture decision record |
 
+## Deep concept guides
+
+- [Follow an HTTP request across VPC subnets, routing and load balancers](deep-dives/networking-vpc-load-balancer.md)
+- [IAM, workload identity, secrets and trust policies](deep-dives/iam-secrets-trust.md)
+- [Infrastructure as Code, disaster recovery, RPO/RTO and FinOps](deep-dives/reliability-iac-finops.md)
+
 ## Vendor mapping
 
 | Capability | AWS | Google Cloud | Azure |
