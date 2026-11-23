@@ -66,6 +66,12 @@ For difficult technologies, use the [Spark/Kafka/lakehouse deep dives](big-data/
 
 Use the [engineering ticket backlog](WORK_TICKETS.md) for tasks resembling real Data Engineer and Cloud Engineer assignments, and the [four end-to-end projects](capstones/README.md) to combine those skills into deliverables.
 
+## Academy build status and extension plan
+
+The [build roadmap](BUILD_ROADMAP.md) lists implemented modules and labs, what passed unit tests, and what still needs **live Kafka/MinIO, Airflow, Docker and cloud integration testing**. The [lab authoring standard](LAB_TEMPLATE.md) defines the quality requirements for every future project.
+
+The curriculum is ready to study from, but advanced distributed-system and cloud deployment exercises are **not all integration verified**.
+
 ## 4-stage mastery rubric
 
 1. **Explain** a system using no buzzwords: inputs, outputs, states, contracts, assumptions.
