@@ -15,6 +15,20 @@ An open-source, lab-first learning program designed for a Computer Engineering s
 
 **Recommended starting point:** [START HERE](START_HERE.md) → [20-week roadmap](ROADMAP_20_WEEKS.md) → [progress tracker](PROGRESS.md).
 
+## Academy command-line navigation
+
+The **[learner CLI](HOW_TO_USE.md)** makes this a usable local learning platform instead of only a collection of READMEs. With Python 3.11+, run from the repository root:
+
+~~~bash
+python academy/academy.py doctor
+python academy/academy.py list
+python academy/academy.py test all
+python academy/academy.py mark sql-etl --status in-progress
+python academy/academy.py progress
+~~~
+
+The CLI records **self-reported** progress in a local ignored JSON file and never installs tools or creates cloud resources. Passing a reference lab test alone does not prove personal mastery.
+
 ## Learning sequence
 
 ~~~mermaid

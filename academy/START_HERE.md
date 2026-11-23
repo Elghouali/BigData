@@ -10,6 +10,13 @@ Do **not** start with Kafka, Kubernetes, or the biggest Docker Compose stack. Pr
 - Read [Security](SECURITY.md). Do not commit local secret files.
 - Read the GitHub Actions checks; green CI is evidence for *that specific tested commit*, not proof of deployment.
 
+Try the [academy CLI](HOW_TO_USE.md) from the repository root to list available labs and check tool availability:
+
+~~~bash
+python academy/academy.py doctor
+python academy/academy.py list --track big-data
+~~~
+
 ## 15–30 min: conceptual diagnostic
 
 On paper, answer **without searching**:
