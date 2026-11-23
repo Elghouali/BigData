@@ -19,6 +19,14 @@
 | [11](modules/11-cdc-reliability.md) | WAL, CDC, schema evolution, data quality, reprocessing | [CDC lakehouse](https://github.com/Elghouali/cdc-pipeline-bigdata) |
 | [12](modules/12-production-platforms.md) | security, governance, observability, cost and SLO | capstone review |
 
+## Deep concept guides
+
+When a production-style task raises a question about *why* a technology behaves the way it does, study these detailed mechanism walkthroughs before copying code:
+
+- [Spark execution: logical plans, shuffle, skew and tuning](deep-dives/spark-internals.md)
+- [Kafka partitions, offsets, replays and exactly-once boundaries](deep-dives/kafka-delivery-semantics.md)
+- [CDC, Parquet and Iceberg table semantics](deep-dives/parquet-iceberg-cdc.md)
+
 ## How to study one module
 1. Read the **mental model** and follow a record through the system.
 2. Explain its **internal mechanism**, with a diagram.
