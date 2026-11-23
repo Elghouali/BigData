@@ -44,6 +44,12 @@ Produced artifacts:
 
 **Expected fixture:** 4 accepted unique orders, 5 rejected, 1 exact duplicate, 3 paid orders, 325.00 MAD total paid revenue. The sample's reject ratio is intentionally high for training, so the default demo gate is lenient (0.60). **Production must set a threshold with the business and operations owners.**
 
+## Publish gate and recovery contract
+
+Each run builds its SQLite database, Gold CSV and manifest inside a temporary staging directory. A failed quality check **does not replace the last known-good release**. The manifest is published last and records a SHA-256 checksum for the Gold CSV.
+
+Publication of three files is **not a single atomic operation**: if the process crashes between replacements, a reader might see mismatched versions. Production upgrades should publish into an immutable versioned directory/object prefix and atomically move a release pointer (or require verified manifest checksums before serving).
+
 ## Your professional implementation tasks
 
 - [ ] Rebuild the data contract and reject policy yourself.

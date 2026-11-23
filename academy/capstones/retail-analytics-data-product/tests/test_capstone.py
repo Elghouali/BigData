@@ -34,6 +34,19 @@ class RetailDataProductTests(unittest.TestCase):
                 build(SOURCE, out, max_reject_ratio=0.1)
             self.assertFalse((out / "daily_kpis.csv").exists())
 
+    def test_failed_rebuild_keeps_last_good_release(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d)
+            build(SOURCE, out)
+            before = {
+                name: (out / name).read_bytes()
+                for name in ("orders.db", "daily_kpis.csv", "manifest.json")
+            }
+            with self.assertRaisesRegex(ValueError, "quality_gate_failed"):
+                build(SOURCE, out, max_reject_ratio=0.1)
+            after = {name: (out / name).read_bytes() for name in before}
+            self.assertEqual(before, after)
+
     def test_api_readout(self):
         with tempfile.TemporaryDirectory() as d:
             out = Path(d)
